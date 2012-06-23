@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    IBOutlet UIDatePicker *dateTimePicker;
+    IBOutlet UILabel *labelDawg;
+}
+-(void) presentMessage: (NSString *) message;
+-(void) scheduleLocalNotificationWithDate: (NSDate *) fireDate;
+-(IBAction)alarmSetButtonTapped:(id)sender;
+-(IBAction)alarmCancelButtonTapped:(id)sender;
 @end

@@ -21,6 +21,9 @@
 		9E2EF8A115965A1800D6C331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2EF87F15965A1800D6C331 /* Foundation.framework */; };
 		9E2EF8A915965A1800D6C331 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF8A715965A1800D6C331 /* InfoPlist.strings */; };
 		9E2EF8AC15965A1800D6C331 /* Alarm_ClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF8AB15965A1800D6C331 /* Alarm_ClockTests.m */; };
+		9E2EF8B815965B7100D6C331 /* ma.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF8B615965B7100D6C331 /* ma.mp3 */; };
+		9E2EF8BA15965BF600D6C331 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF8B915965BF600D6C331 /* alarm.png */; };
+		9E2EF8BC15965C0200D6C331 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF8BB15965C0200D6C331 /* alarm.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +41,25 @@
 		9E2EF87D15965A1800D6C331 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E2EF87F15965A1800D6C331 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E2EF88115965A1800D6C331 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9E2EF88515965A1800D6C331 /* Alarm Clock-Info.plist */ = {isa = PBXFileReference; path = "Alarm Clock-Info.plist"; sourceTree = "<group>"; };
+		9E2EF88515965A1800D6C331 /* Alarm Clock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alarm Clock-Info.plist"; sourceTree = "<group>"; };
 		9E2EF88715965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E2EF88915965A1800D6C331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9E2EF88B15965A1800D6C331 /* Alarm Clock-Prefix.pch */ = {isa = PBXFileReference; path = "Alarm Clock-Prefix.pch"; sourceTree = "<group>"; };
-		9E2EF88C15965A1800D6C331 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E2EF88B15965A1800D6C331 /* Alarm Clock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alarm Clock-Prefix.pch"; sourceTree = "<group>"; };
+		9E2EF88C15965A1800D6C331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E2EF88D15965A1800D6C331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9E2EF89015965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		9E2EF89315965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		9E2EF89515965A1800D6C331 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		9E2EF89515965A1800D6C331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9E2EF89615965A1800D6C331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9E2EF89D15965A1800D6C331 /* Alarm ClockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm ClockTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2EF89E15965A1800D6C331 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9E2EF8A615965A1800D6C331 /* Alarm ClockTests-Info.plist */ = {isa = PBXFileReference; path = "Alarm ClockTests-Info.plist"; sourceTree = "<group>"; };
+		9E2EF8A615965A1800D6C331 /* Alarm ClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alarm ClockTests-Info.plist"; sourceTree = "<group>"; };
 		9E2EF8A815965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9E2EF8AA15965A1800D6C331 /* Alarm_ClockTests.h */ = {isa = PBXFileReference; path = Alarm_ClockTests.h; sourceTree = "<group>"; };
+		9E2EF8AA15965A1800D6C331 /* Alarm_ClockTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alarm_ClockTests.h; sourceTree = "<group>"; };
 		9E2EF8AB15965A1800D6C331 /* Alarm_ClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alarm_ClockTests.m; sourceTree = "<group>"; };
+		9E2EF8B615965B7100D6C331 /* ma.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ma.mp3; sourceTree = "<group>"; };
+		9E2EF8B915965BF600D6C331 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
+		9E2EF8BB15965C0200D6C331 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		9E2EF86E15965A1800D6C331 = {
 			isa = PBXGroup;
 			children = (
+				9E2EF8BB15965C0200D6C331 /* alarm.png */,
 				9E2EF88315965A1800D6C331 /* Alarm Clock */,
 				9E2EF8A415965A1800D6C331 /* Alarm ClockTests */,
 				9E2EF87C15965A1800D6C331 /* Frameworks */,
@@ -127,6 +134,8 @@
 		9E2EF88415965A1800D6C331 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E2EF8B615965B7100D6C331 /* ma.mp3 */,
+				9E2EF8B915965BF600D6C331 /* alarm.png */,
 				9E2EF88515965A1800D6C331 /* Alarm Clock-Info.plist */,
 				9E2EF88615965A1800D6C331 /* InfoPlist.strings */,
 				9E2EF88915965A1800D6C331 /* main.m */,
@@ -227,6 +236,9 @@
 				9E2EF88815965A1800D6C331 /* InfoPlist.strings in Resources */,
 				9E2EF89115965A1800D6C331 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9E2EF89415965A1800D6C331 /* MainStoryboard_iPad.storyboard in Resources */,
+				9E2EF8B815965B7100D6C331 /* ma.mp3 in Resources */,
+				9E2EF8BA15965BF600D6C331 /* alarm.png in Resources */,
+				9E2EF8BC15965C0200D6C331 /* alarm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
