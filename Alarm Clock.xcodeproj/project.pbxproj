@@ -14,7 +14,6 @@
 		9E2EF88A15965A1800D6C331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF88915965A1800D6C331 /* main.m */; };
 		9E2EF88E15965A1800D6C331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF88D15965A1800D6C331 /* AppDelegate.m */; };
 		9E2EF89115965A1800D6C331 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF88F15965A1800D6C331 /* MainStoryboard_iPhone.storyboard */; };
-		9E2EF89415965A1800D6C331 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2EF89215965A1800D6C331 /* MainStoryboard_iPad.storyboard */; };
 		9E2EF89715965A1800D6C331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF89615965A1800D6C331 /* ViewController.m */; };
 		9E2EF89F15965A1800D6C331 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2EF89E15965A1800D6C331 /* SenTestingKit.framework */; };
 		9E2EF8A015965A1800D6C331 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2EF87D15965A1800D6C331 /* UIKit.framework */; };
@@ -48,7 +47,6 @@
 		9E2EF88C15965A1800D6C331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E2EF88D15965A1800D6C331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9E2EF89015965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		9E2EF89315965A1800D6C331 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9E2EF89515965A1800D6C331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9E2EF89615965A1800D6C331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9E2EF89D15965A1800D6C331 /* Alarm ClockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alarm ClockTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +121,6 @@
 				9E2EF88C15965A1800D6C331 /* AppDelegate.h */,
 				9E2EF88D15965A1800D6C331 /* AppDelegate.m */,
 				9E2EF88F15965A1800D6C331 /* MainStoryboard_iPhone.storyboard */,
-				9E2EF89215965A1800D6C331 /* MainStoryboard_iPad.storyboard */,
 				9E2EF89515965A1800D6C331 /* ViewController.h */,
 				9E2EF89615965A1800D6C331 /* ViewController.m */,
 				9E2EF88415965A1800D6C331 /* Supporting Files */,
@@ -235,7 +232,6 @@
 			files = (
 				9E2EF88815965A1800D6C331 /* InfoPlist.strings in Resources */,
 				9E2EF89115965A1800D6C331 /* MainStoryboard_iPhone.storyboard in Resources */,
-				9E2EF89415965A1800D6C331 /* MainStoryboard_iPad.storyboard in Resources */,
 				9E2EF8B815965B7100D6C331 /* ma.mp3 in Resources */,
 				9E2EF8BA15965BF600D6C331 /* alarm.png in Resources */,
 				9E2EF8BC15965C0200D6C331 /* alarm.png in Resources */,
@@ -314,14 +310,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		9E2EF89215965A1800D6C331 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E2EF89315965A1800D6C331 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		9E2EF8A715965A1800D6C331 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -386,7 +374,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alarm Clock/Alarm Clock-Prefix.pch";
 				INFOPLIST_FILE = "Alarm Clock/Alarm Clock-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/facebook-ios-sdk.build/Release-iphoneos/facebook-ios-sdk.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/facebook-ios-sdk.build/Release-iphoneos/facebook-ios-sdk.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/lib/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,7 +394,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alarm Clock/Alarm Clock-Prefix.pch";
 				INFOPLIST_FILE = "Alarm Clock/Alarm Clock-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/facebook-ios-sdk.build/Release-iphoneos/facebook-ios-sdk.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/facebook-ios-sdk.build/Release-iphoneos/facebook-ios-sdk.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/build/Release-iphonesimulator\"",
+					"\"$(SRCROOT)/facebook-ios-sdk/lib/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -455,6 +461,7 @@
 				9E2EF8B115965A1800D6C331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E2EF8B215965A1800D6C331 /* Build configuration list for PBXNativeTarget "Alarm ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +470,7 @@
 				9E2EF8B415965A1800D6C331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
